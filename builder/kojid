@@ -4227,6 +4227,8 @@ class OzImageTask(BaseTaskHandler):
             return major, minor
         elif distro.startswith('Fedora'):
             return distro.split('-')
+        elif distro.startswith('OpenCloudOS'):
+            return distro.split('-')
         elif distro.startswith('CentOS'):
             return distro.split('.')
         elif distro.startswith('SL'):
